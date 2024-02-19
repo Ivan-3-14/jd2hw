@@ -3,7 +3,7 @@ package application.dto.people;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static application.dao.classes.utility.MockUtils.getPeople;
+import static application.dao.сlasses.testUtils.MockUtils.getPeople;
 
 class PeopleTest {
 
@@ -52,7 +52,7 @@ class PeopleTest {
         People people = getPeople();
         Assert.assertEquals("to string not equals",
                 people.toString(),
-                "People(id=0, name=Mike, surname=Vazovsky, age=20)"
+                "People(id=0, name=Mike, surname=Vazovsky, age=20, address=null)"
         );
     }
 
@@ -60,7 +60,7 @@ class PeopleTest {
     void getId() {
         People people = getPeople();
         people.setId(1);
-        Assert.assertEquals(people.getId(), 1, 0);
+        Assert.assertEquals( people.getId(),1, 0);
     }
 
     @Test

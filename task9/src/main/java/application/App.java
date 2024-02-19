@@ -1,7 +1,7 @@
 package application;
 
-import application.dao.classes.AddressDAOImpl;
-import application.dao.classes.PeopleDAOImpl;
+import application.dao.сlasses.AddressDAOImpl;
+import application.dao.сlasses.PeopleDAOImpl;
 import application.dto.address.Address;
 import application.dto.people.People;
 import application.utils.hibernate.HibernateUtil;
@@ -44,30 +44,35 @@ public class App {
                 .name("Roman")
                 .surname("Obuhov")
                 .age(21)
+                .address(address1)
                 .build();
 
         People people2 = People.builder()
                 .name("Victor")
                 .surname("Suvorov")
                 .age(56)
+                .address(address2)
                 .build();
 
         People people3 = People.builder()
                 .name("Ronald")
                 .surname("Wisely")
                 .age(11)
+                .address(address3)
                 .build();
 
         People people4 = People.builder()
                 .name("Artur")
                 .surname("Pirozkov")
                 .age(46)
+                .address(address4)
                 .build();
 
         People people5 = People.builder()
                 .name("Donald")
                 .surname("Trump")
                 .age(73)
+                .address(address5)
                 .build();
 
         peopleDAO.create(people1);
