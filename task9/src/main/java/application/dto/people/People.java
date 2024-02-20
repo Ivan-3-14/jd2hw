@@ -27,4 +27,8 @@ public class People {
 
     @Column(name = "age")
     private Integer age;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "address_id")
+    private Address address;
 }

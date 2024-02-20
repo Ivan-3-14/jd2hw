@@ -1,0 +1,7 @@
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="add-column-address-id-people-table-v1" author="ivan">
+        <addColumn catalogName="task9" tableName="people">
+            <column name="address_id" type="int"/>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>
