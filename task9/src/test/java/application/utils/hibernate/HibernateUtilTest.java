@@ -9,7 +9,7 @@ import javax.persistence.EntityManager;
 class HibernateUtilTest {
 
     @AfterClass
-    public static void closeConnection() {
+    public static void closeConnection(){
         HibernateUtil.close();
     }
 
