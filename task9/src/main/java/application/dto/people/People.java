@@ -4,6 +4,8 @@ import application.dto.address.Address;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Builder
 @NoArgsConstructor
@@ -27,4 +29,10 @@ public class People {
 
     @Column(name = "age")
     private Integer age;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch =  FetchType.LAZY)
+    @JoinTable(name = "people_address",
+            joinColumns = {@JoinColumn(name = "people_id")},
+            inverseJoinColumns = {@JoinColumn(name = "address_id")})
+        private Set<Address> addressSet = new HashSet<>();
 }

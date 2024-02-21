@@ -5,4 +5,8 @@
              relativeToChangelogFile="true"/>
     <include file="v1.0-changelog-creation-table/create-changeset-address-table.xml"
              relativeToChangelogFile="true"/>
+    <include file="v2.0-changelog-add-one-to-many/v2.0-changelog.xml"
+             relativeToChangelogFile="true"/>
+    <include file="v3.0-changelog-creation-table-many-to-many/create-changeset-people-address-table.xml"
+             relativeToChangelogFile="true"/>
 </databaseChangeLog>
