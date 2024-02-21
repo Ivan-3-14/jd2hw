@@ -3,7 +3,7 @@ package application.dto.address;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static application.dao.classes.utility.MockUtils.getAddress;
+import static application.dao.сlasses.testUtils.MockUtils.getAddress;
 
 class AddressTest {
 
@@ -45,7 +45,7 @@ class AddressTest {
         Address address = getAddress();
         Assert.assertEquals("to string not equals",
                 address.toString(),
-                "Address(id=0, street=Nemiga, house=15)"
+                "Address{id=0, street='Nemiga', house=15}"
         );
     }
 
@@ -66,7 +66,7 @@ class AddressTest {
     @Test
     void getHouse() {
         Address address = getAddress();
-        address.setHouse(16);
-        Assert.assertEquals(address.getHouse(), 16, 0);
+        address.setHouse(168);
+        Assert.assertEquals(address.getHouse(),168,  0);
     }
 }
