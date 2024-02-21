@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 
-import static application.dao.classes.utility.MockUtils.getByteArrayOutputStream;
+import static application.dao.сlasses.testUtils.MockUtils.getByteArrayOutputStream;
 
 class PrinterTest {
 

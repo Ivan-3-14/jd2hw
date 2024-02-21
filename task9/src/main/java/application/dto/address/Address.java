@@ -11,8 +11,8 @@ import java.util.Set;
 @AllArgsConstructor
 @Getter
 @Setter
-@EqualsAndHashCode
-@ToString
+@EqualsAndHashCode(exclude = "peopleSet")
+@ToString(exclude = "peopleSet")
 @Entity
 @Table(name = "address")
 public class Address {
@@ -25,4 +25,7 @@ public class Address {
 
     @Column(name = "house")
     private Integer house;
+
+    @OneToMany(mappedBy = "address")
+    private Set<People> peopleSet = new HashSet<>();
 }
