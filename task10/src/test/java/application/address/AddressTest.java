@@ -3,10 +3,8 @@ package application.address;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static application.dao.сlasses.utility.MockConstant.CITY1;
-import static application.dao.сlasses.utility.MockConstant.STREET1;
+import static application.dao.сlasses.utility.MockConstant.*;
 import static application.dao.сlasses.utility.MockUtils.getAddress1;
-import static org.junit.jupiter.api.Assertions.*;
 
 class AddressTest {
 
