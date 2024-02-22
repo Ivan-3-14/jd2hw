@@ -6,11 +6,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "TASK_TYPE",
-        discriminatorType = DiscriminatorType.CHAR)
-@DiscriminatorValue("T")
-@Builder
+@Inheritance(strategy = InheritanceType.JOINED)
 @Getter
 @Setter
 @ToString

@@ -3,7 +3,8 @@ package application.dto.worktask;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static application.dao.сlasses.utility.MockUtils.*;
+import static application.dao.сlasses.utility.MockUtils.getWorkTask1;
+import static application.dao.сlasses.utility.MockUtils.getWorkTask2;
 
 class WorkTaskTest {
 
