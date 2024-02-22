@@ -8,7 +8,6 @@ import java.sql.Timestamp;
 
 import static application.dao.сlasses.utility.MockUtils.*;
 
-
 class HomeTaskTest {
 
     @Test

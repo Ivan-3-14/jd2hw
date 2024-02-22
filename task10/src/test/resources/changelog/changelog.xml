@@ -1,6 +1,6 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
-    <include file="v1.0-changelog-creation-table\create-changeset-task-table.xml"
+    <include file="v2.0-changelog-creation-table\v2.0-changelog.xml"
              relativeToChangelogFile="true"/>
 </databaseChangeLog>

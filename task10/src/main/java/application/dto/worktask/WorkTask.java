@@ -2,6 +2,7 @@ package application.dto.worktask;
 
 import application.dto.task.Task;
 import lombok.*;
+
 import javax.persistence.*;
 
 @Data
@@ -9,8 +10,9 @@ import javax.persistence.*;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString
-@DiscriminatorValue("W")
 @Entity
+@Table(name = "work_task")
+@PrimaryKeyJoinColumn(name = "task_id")
 public class WorkTask extends Task {
     @Column
     private Double cost;
