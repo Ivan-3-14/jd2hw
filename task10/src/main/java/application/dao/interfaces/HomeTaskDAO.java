@@ -1,6 +1,7 @@
 package application.dao.interfaces;
 
-import application.dto.hometask.HomeTask;
 
-public interface HomeTaskDAO extends DAO<HomeTask> {
+import application.dto.task.Task;
+
+public interface HomeTaskDAO extends DAO<Task> {
 }
