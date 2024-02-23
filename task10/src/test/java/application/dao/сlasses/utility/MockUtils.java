@@ -77,7 +77,6 @@ public class MockUtils {
         return homeTask;
     }
 
-
     public static Long getDataBaseCount(EntityManager entityManager, Object tClass) {
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Long> queryEntity = builder.createQuery(Long.class);
@@ -89,5 +88,18 @@ public class MockUtils {
         Assert.assertNotNull(entityTask);
         Assert.assertEquals("name not equals", entityTask.getName(), task.getName());
         Assert.assertEquals("description not equals", entityTask.getDescription(), task.getDescription());
+    }
+    public static void  assertWorkTask(WorkTask entityTask, WorkTask task) {
+        Assert.assertNotNull(entityTask);
+        Assert.assertEquals("name not equals", entityTask.getName(), task.getName());
+        Assert.assertEquals("description not equals", entityTask.getDescription(), task.getDescription());
+        Assert.assertEquals("cost not equals", entityTask.getCost(), task.getCost());
+    }
+    public static void  assertHomeTask(HomeTask entityTask, HomeTask task) {
+        Assert.assertNotNull(entityTask);
+        Assert.assertEquals("name not equals", entityTask.getName(), task.getName());
+        Assert.assertEquals("description not equals", entityTask.getDescription(), task.getDescription());
+        Assert.assertEquals("start date not equals", entityTask.getStartDate(), task.getStartDate());
+        Assert.assertEquals("end date not equals", entityTask.getEndDate(), task.getEndDate());
     }
 }

@@ -1,6 +1,6 @@
 package application.dao.interfaces;
 
-import application.dto.worktask.WorkTask;
+import application.dto.task.Task;
 
-public interface WorkTaskDAO extends DAO<WorkTask> {
+public interface WorkTaskDAO extends DAO<Task> {
 }
