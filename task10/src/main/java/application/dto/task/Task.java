@@ -6,16 +6,12 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "TASK_TYPE",
-        discriminatorType = DiscriminatorType.CHAR)
-@DiscriminatorValue("T")
-@Builder
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Entity
 @Table
 public class Task {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer id;
 
     @Column
